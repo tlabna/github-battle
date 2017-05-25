@@ -16,7 +16,7 @@ class Popular extends React.Component {
 		this.setState(function () {
 			return {
 				selectedLanguage: lang
-			} ;
+			};
 		});
 	}
 
