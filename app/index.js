@@ -1,22 +1,12 @@
 var React    = require('react');
 var ReactDOM = require('react-dom');
 require('./index.css');
+var App = require('./components/App');
 
 // Component might have:
 // State
 // Lifecycle event
 // UI
-
-// Component definition
-class App extends React.Component {
-	render() {
-		return (
-			<div>
-				Hello React World!!!
-			</div>
-		);
-	}
-}
 
 // Component Invocation:
 // <App />
