@@ -129,4 +129,17 @@ a {
 	text-align: center;
 	font-size: 30px;
 	font-weight: 200;
-} 
+}
+
+.reset {
+	border: none;
+	background: transparent;
+	color: #D0021B;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.reset:hover {
+	cursor: pointer;
+}  
