@@ -25,6 +25,8 @@ var config = {
 	})]
 };
 
+// We set NODE_ENV to production in package.json 
+// so that we can check it's state in webpack.config.js
 if (process.env.NODE_ENV === 'production') {
 	config.plugins.push(
 		// Create new instace of webpack.DefinePlugin
