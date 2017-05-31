@@ -120,4 +120,8 @@ class Results extends React.Component {
 	}
 }
 
+Results.propTypes = {
+	location: PropTypes.object.isRequired
+};
+
 module.exports = Results;
