@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "create": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    // Set NODE_ENV to production in our webpack.config file
+    "build": "NODE_ENV='production' webpack -p"
   },
   "babel": {
     "presets": [
