@@ -5,7 +5,7 @@ var webpack = require('webpack');
 var config = {
 	// Add polyfill so Promises and other
 	// methods are supported on older browsers
-	entry: ['babel-polyfill', './app/index.js'],
+	entry: ['babel-polyfill', 'whatwg-fetch', './app/index.js'],
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'index_bundle.js',
