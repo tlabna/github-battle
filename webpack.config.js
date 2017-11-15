@@ -3,7 +3,9 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
 
 var config = {
-	entry: './app/index.js',
+	// Add polyfill so Promises and other
+	// methods are supported on older browsers
+	entry: ['babel-polyfill', './app/index.js'],
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'index_bundle.js',
