@@ -24,7 +24,7 @@ function SelectLanguage ({selectedLanguage, onSelect}) {
 					// a specific language. First argument is null because 
 					// we have already bound *this* to it
 					// Function will only be invoked on click 
-					onClick = {onSelect(lang)}  
+					onClick = {() => onSelect(lang)}  
 					key = {lang}>
 					{lang}
 				</li>
