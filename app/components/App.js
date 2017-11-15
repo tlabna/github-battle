@@ -1,12 +1,10 @@
-const React = require('react');
-const Popular = require('./Popular');
-const ReactRouter = require('react-router-dom');
-const Router = ReactRouter.BrowserRouter;
-const {Route, Switch} = ReactRouter;
-const Nav = require('./Nav');
-const Home = require('./Home');
-const Battle = require('./Battle');
-const Results = require('./Results');
+import React from 'react';
+import Popular from './Popular';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Nav from './Nav';
+import Home from './Home';
+import Battle from './Battle';
+import Results from './Results';
 
 
 // Component definition
@@ -31,4 +29,5 @@ class App extends React.Component {
 
 // Must export so that App component it is available in index.js
 // Called CommonJS
-module.exports = App;
+/* module.exports = App; */
+export default App;
