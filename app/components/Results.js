@@ -47,15 +47,15 @@ Player.propTypes = {
 };
 
 class Results extends React.Component {
-	constructor(props) {
-		super(props);
+	static propTypes = {
+		location: PropTypes.object.isRequired
+	};
 
-		this.state = {
-			winner: null,
-			loser: null,
-			error: null,
-			loading: true
-		};
+	state = {
+		winner: null,
+		loser: null,
+		error: null,
+		loading: true
 	}
 
 	componentDidMount () {
@@ -113,10 +113,6 @@ class Results extends React.Component {
 		);
 	}
 }
-
-Results.propTypes = {
-	location: PropTypes.object.isRequired
-};
 
 // module.exports = Results;
 export default Results;
